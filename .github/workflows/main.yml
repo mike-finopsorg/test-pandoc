@@ -11,6 +11,8 @@ jobs:
         container:
             image: pandoc/extra:latest-ubuntu
         steps:
+            - name: Check out repository code
+              uses: actions/checkout@v3
             - name: super-step
               shell: sh
               run: |
