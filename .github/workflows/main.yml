@@ -1,0 +1,17 @@
+name: generate_spec_pdf
+on:
+  push:
+    branches:
+      - working_draft
+
+jobs:
+    # The job that will use the container image you just pushed to ghcr.io
+    gen_pdf:
+        runs-on: ubuntu-18.04
+        container:
+            image: pandoc/extra:latest-ubuntu
+        steps:
+            - name: super-step
+              shell: sh
+              run: |
+                uname -a
