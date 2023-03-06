@@ -15,6 +15,6 @@ jobs:
               shell: sh
               run: |
                 uname -a
-                ls -l
+                ls -laR
                 pwd
-                ls -l /github/home
+                ls -laR /github/home
