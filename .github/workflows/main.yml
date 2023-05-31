@@ -15,4 +15,5 @@ jobs:
             - name: super-step
               shell: sh
               run: |
+                ls -laR
                 python3 main.py
