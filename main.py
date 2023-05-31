@@ -16,4 +16,4 @@ ET.SubElement(
 
 tree = ET.ElementTree(testsuites)
 ET.indent(tree)
-tree.write("filename.xml", encoding="utf-8", xml_declaration=True)
+tree.write("reports/focus_validations.xml", encoding="utf-8", xml_declaration=True)

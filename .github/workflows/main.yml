@@ -18,4 +18,12 @@ jobs:
               shell: sh
               run: |
                 ls -laR
+                mkdir reports
                 python3 main.py
+            - name: Test Report
+              uses: dorny/test-reporter@v1
+              if: success() || failure()    # run this step even if previous step failed
+              with:
+                name: FOCUS Validations
+                path: reports/*.xml         # Path to test results
+                reporter: jest-junit        # Format of test results
