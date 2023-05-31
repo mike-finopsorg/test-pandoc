@@ -10,7 +10,7 @@ jobs:
     gen_pdf:
         runs-on: ubuntu-20.04
         container:
-            image: pandoc/extra:latest-ubuntu
+            image: ubuntu-latest
         steps:
             - name: Check out repository code
               uses: actions/checkout@v3
