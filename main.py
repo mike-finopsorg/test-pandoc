@@ -27,4 +27,4 @@ ET.SubElement(testcase3, "skipped", message="Test was skipped.")
 
 tree = ET.ElementTree(testsuites)
 ET.indent(tree)
-tree.write("focus_validations.xml", encoding="utf-8", xml_declaration=True)
+tree.write("reports/focus_validations.xml", encoding="utf-8", xml_declaration=True)
