@@ -9,6 +9,8 @@ jobs:
     # The job that will use the container image you just pushed to ghcr.io
     gen_pdf:
         runs-on: ubuntu-latest
+        permissions:
+          checks: write
         steps:
             - name: Check out repository code
               uses: actions/checkout@v3
