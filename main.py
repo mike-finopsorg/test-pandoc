@@ -21,7 +21,7 @@ ET.SubElement(
     name="testCase2",
     message="Expected value did not match.",
     type="AssertionError",
-).text("Failed")
+).text = "Failed"
 testcase3 = ET.SubElement(testsuite1, "testcase", name="Range", time="0.004")
 ET.SubElement(testcase3, "skipped", message="Test was skipped.")
 
